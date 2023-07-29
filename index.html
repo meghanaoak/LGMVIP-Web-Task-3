@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student enrollment form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar">
+            <h3> Student Enrollment Form</h3>   
+    </nav>
+    <div class="flex-container">
+        <div class="input">
+            <table>
+                <center>
+                    <tr>
+                        <td>
+                            <!-- html form -->
+                            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+
+                                <div>
+                                    <label> Name </label>
+                                    <input type="text" name="name" id="name">   
+                                </div>
+
+                                <div>
+                                    <label> Email </label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+
+                                <div>
+                                    <label> Phone Number </label>
+                                    <input type="number" name="phno" id="phno">
+                                </div>
+
+                                <div>
+                                    <label> Gender </label>
+                                    <input type="text" name="gender" id="gender">
+                                </div>
+
+                                <div>
+                                    <label> Skills </label>
+                                    <input type="text" name="skills" id="skills">
+                                </div>
+
+                                <div class="form-action-buttons">
+                                    <input type="submit" value="Enroll Student">
+                                    <input type="button" value="Clear" onclick="resetForm()">
+                                </div>
+                            
+                            </form>
+                        </td>
+                    </tr>
+                </center>
+            </table>  
+        </div>
+
+        <hr color="black" width="5px">
+
+        <div class="output">
+            <center>
+                <table class="list" id="studentlist">
+                    <thead>
+                        <tr>
+                            <th>  Name </th>
+                            <th>  Email </th>
+                            <th> Phone number </th>
+                            <th> Gender</th>
+                            <th>  Skills </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </center>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

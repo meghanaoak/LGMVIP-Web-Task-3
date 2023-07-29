@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(181, 178, 174);
+    font-size: 30px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+table{
+    width: 100;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+    height:50px;
+    width: 100%;
+}
+.input{
+    margin: 25px;
+    justify-content:space-between;
+    width: 80%;
+    font-size: 25px;
+}
+input[type=text],input[type=email], input[type=number]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 20px;
+
+}
+
+
+input[type=submit]{
+    width: 40%;
+    background-color: #95d3f0;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+input[type=button]{
+    width: 40%;
+    background-color: #f09595;
+    color: #000;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content:space-around;
+    font-size: 20px;
+}
+
+
+.output{
+    margin: 25px;
+    justify-content:space-between;
+    width: 80%;
+    font-size: 20px;
+    align-content: space-between;
+}
+
+table.list{
+    width:100%;
+}
+
+ .td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+}
+
